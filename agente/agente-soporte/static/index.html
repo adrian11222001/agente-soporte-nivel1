@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agente IA · Soporte Técnico Nivel 1</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- ============ PANTALLA DE LOGIN / REGISTRO ============ -->
+  <div id="login-screen">
+    <div id="login-box">
+      <h2 id="login-titulo">Iniciar sesión</h2>
+      <p>Agente IA · Soporte Técnico Nivel 1</p>
+      <div id="login-error"></div>
+      <input id="nombre-field" placeholder="Nombre completo" />
+      <input id="email-field" type="email" placeholder="Correo electrónico" />
+      <input id="password-field" type="password" placeholder="Contraseña" />
+      <button id="login-submit">Entrar</button>
+      <div id="login-toggle">¿No tienes cuenta? Regístrate</div>
+    </div>
+  </div>
+
+  <!-- ============ APP PRINCIPAL ============ -->
+  <div id="app">
+    <div id="sidebar">
+      <div id="sidebar-header">
+        <button id="nueva-conv">+ Nueva conversación</button>
+      </div>
+      <div id="lista-conversaciones"></div>
+      <div id="sidebar-footer">
+        <span id="usuario-email"></span><br>
+        <span id="cerrar-sesion">Cerrar sesión</span>
+      </div>
+    </div>
+
+    <div id="main">
+      <header>
+        <div class="dot"></div>
+        <div>
+          <h1>Agente Inteligente de IA — Soporte Técnico Nivel 1</h1>
+          <p>Describe tu problema; el agente puede crear/consultar tickets, escalar y ejecutar diagnósticos.</p>
+        </div>
+      </header>
+
+      <div id="chat"></div>
+
+      <form id="form">
+        <input id="input" autocomplete="off" placeholder="Escribe tu problema..." />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

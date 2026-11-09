@@ -1,0 +1,9 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+openai>=1.66.0
+pydantic[email]==2.10.3
+python-dotenv==1.0.1
+mysql-connector-python==9.1.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+pyjwt==2.10.1
